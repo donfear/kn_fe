@@ -12,7 +12,7 @@ export class ProductsService extends HttpService {
     }))
   }
 
-  private _filterProductsByText(products: IProduct[], text: string) {
+  private _filterProductsByName(products: IProduct[], text: string) {
     return products.filter(product => product.productName.toLowerCase().includes(text.toLowerCase()))
   }
 
@@ -26,7 +26,7 @@ export class ProductsService extends HttpService {
     const {categories, text} = filter;
 
     if (!!text) {
-      products = this._filterProductsByText(products, text);
+      products = this._filterProductsByName(products, text);
     }
 
     if (!!categories.length) {

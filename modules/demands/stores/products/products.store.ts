@@ -45,7 +45,6 @@ export class ProductsStore {
         text: this.filterStore.searchText,
       });
 
-
       this.setProducts(products);
     } catch (e) {
     } finally {
@@ -53,7 +52,7 @@ export class ProductsStore {
     }
   })
 
-  async loadProducts(): Promise<void> { // Imitate loading from the server
+  async loadProducts(): Promise<void> {
     this._cancellableLoadProductsPromise?.cancel();
 
     this._cancellableLoadProductsPromise = this._loadProducts();

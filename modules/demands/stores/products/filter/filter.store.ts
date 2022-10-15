@@ -12,7 +12,7 @@ export class ProductsFilterStore {
     {label: 'Management Tools', category: EProductCategory.MANAGEMENT_TOOLS},
   ];
 
-  @observable selectedFilters: EProductCategory[] = []; // selected categoring
+  @observable selectedFilters: EProductCategory[] = [];
   @observable searchText: string = '';
 
   constructor() {

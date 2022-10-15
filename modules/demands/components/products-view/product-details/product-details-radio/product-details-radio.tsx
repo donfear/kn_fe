@@ -3,7 +3,6 @@ import React from "react";
 import {IProduct} from "../../../../types/interfaces/product.interface";
 
 export function ProductDetailsRadio(product: IProduct) {
-  // TODO Radio buttons not connected, waiting for backend */
   const getMockOptionInfo = (index: number) => {
     if (!index) {
       return 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
