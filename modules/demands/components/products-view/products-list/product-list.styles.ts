@@ -1,7 +1,7 @@
 import {styled} from "@mui/material";
 
 export const ProductsListContainer = styled('div')({
-  overflow: 'scroll',
+  overflowY: 'scroll',
   paddingBottom: '8px',
   position: 'relative'
 })
