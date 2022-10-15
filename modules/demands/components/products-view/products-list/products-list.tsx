@@ -96,7 +96,7 @@ export default class ProductsList extends React.Component<ProductsListProps> {
           this.renderUnfilledTableContent(
             'Loading...',
             <Box style={{'width': '200px'}}>
-              <LinearProgress color={'primary'}/>
+              <LinearProgress color={'primary'} data-loading-progress/>
             </Box>
           )
           :

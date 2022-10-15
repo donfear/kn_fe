@@ -24,6 +24,7 @@ export class ProductsSearch extends React.Component<any, any> {
           placeholder="Type here..."
           variant="outlined"
           size={"small"}
+          data-search-input
           sx={{
             backgroundColor: '#F5F6F7',
             borderRadius: '2px',

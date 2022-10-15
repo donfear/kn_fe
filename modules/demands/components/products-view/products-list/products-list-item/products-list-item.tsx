@@ -20,6 +20,7 @@ export class ProductsListItem extends React.Component<ProductsTableItemProps> {
         const chipsComponents = this.props.tags.map((tag, index) => <Chip sx={{marginBottom: 'unset', marginTop: '8px'}} label={tag} key={index}/>)
         return (
             <ProductListItemContainer
+                data-product-list-item={this.props.id}
                 onClick={this.props.onClick}
                 sx={{
                     border: '1px solid transparent',
