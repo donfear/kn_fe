@@ -9,11 +9,24 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/react": "^11.10.4",
+    "@emotion/styled": "^11.10.4",
+    "@mui/material": "^5.10.9",
+    "@mui/system": "^5.10.9",
+    "@mui/styled-engine-sc": "^5.10.6",
+    "@svgr/webpack": "^6.4.0",
+    "mobx": "^6.6.2",
+    "mobx-react": "^7.5.3",
     "next": "12.3.1",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
   "devDependencies": {
+    "@babel/core": "7.16.12",
+    "@babel/plugin-proposal-class-properties": "7.12.1",
+    "@babel/plugin-proposal-decorators": "7.16.7",
+    "@babel/preset-env": "7.16.11",
+    "@babel/preset-typescript": "7.16.7",
     "@types/node": "18.8.4",
     "@types/react": "18.0.21",
     "@types/react-dom": "18.0.6",
