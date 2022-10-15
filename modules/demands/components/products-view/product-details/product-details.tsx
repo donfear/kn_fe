@@ -72,7 +72,7 @@ export class ProductDetails extends React.Component<ProductDetailsProps> {
       return null;
     }
     return (
-      <ProductsDetailsContainer>
+      <ProductsDetailsContainer data-product-details>
 
         <ProductsViewHeaderLabelWrapper>
           <Typography variant={'h6'}>Product Details</Typography>

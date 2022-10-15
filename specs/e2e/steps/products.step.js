@@ -7,6 +7,7 @@ module.exports = {
         nothingFound: '[data-nothing-found]',
         listItem: '[data-product-list-item]',
         categoryFilter: '[data-product-category-filter]',
+        productDetails: '[data-product-details]',
     },
     isLoadingShown: function() {
         I.seeElement(this.selectors.loadingProgressBar);

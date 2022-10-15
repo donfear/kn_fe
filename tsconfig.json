@@ -29,7 +29,6 @@
 , "specs/e2e/steps/products.step.js"  ],
   "exclude": [
     "node_modules",
-    "codecept",
     "dist"
   ]
 }
