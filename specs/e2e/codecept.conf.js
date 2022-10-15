@@ -10,7 +10,8 @@ exports.config = {
     }
   },
   include: {
-    I: './steps_file.js'
+    I: './steps_file.js',
+    productsStep: './steps/products.step.js',
   },
   name: 'e2e'
 }

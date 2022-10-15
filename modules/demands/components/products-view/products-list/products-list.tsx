@@ -100,7 +100,7 @@ export default class ProductsList extends React.Component<ProductsListProps> {
             </Box>
           )
           :
-          this.isNothingFound ? this.renderUnfilledTableContent('Nothing found.')
+          this.isNothingFound ? <Box data-nothing-found sx={{height: '100%'}}>{this.renderUnfilledTableContent('Nothing found.')}</Box>
             :
             <>
               {this._productsStore.products.map((product, index) => (

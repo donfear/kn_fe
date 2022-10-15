@@ -26,7 +26,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
-  ],
+, "specs/e2e/steps/products.step.js"  ],
   "exclude": [
     "node_modules",
     "codecept",

@@ -1,25 +1,20 @@
 Feature('Filtering');
 
-const selectors = {
-    searchInput: '[data-search-input] input',
-    loadingProgressBar: '[data-loading-progress]',
-    listItem: '[data-product-list-item]',
-}
-
 Before(({I}) => I.amOnPage('/'));
 
-Scenario('test search filter', ({ I }) => {
-    I.waitForElement(selectors.searchInput);
-    I.fillField(selectors.searchInput, 'zoom');
+Scenario('test search filter', ({ I, productsStep }) => {
+    I.say('Checking if product not found and empty screen shown');
+    productsStep.findProduct('adesadasfdse32ewff5645354rfdsx', {shouldBeFound: false});
 
-    I.seeElement(selectors.loadingProgressBar);
-    I.waitForElement(selectors.listItem);
+    I.say('Checking if product found');
+    productsStep.findProduct('zoom');
 
-    I.fillField(selectors.searchInput, '');
-    I.dontSee(selectors.loadingProgressBar);
-    I.dontSee(selectors.listItem);
+    I.fillField(productsStep.selectors.searchInput, '');
+    I.dontSee(productsStep.selectors.loadingProgressBar);
+    I.dontSee(productsStep.selectors.listItem);
 });
 
-Scenario('test categories filters', ({ I }) => {
- 
+Scenario('test categories filters', async ({ I, productsStep }) => {
+    I.seeNumberOfElements(productsStep.selectors.categoryFilter, 5);
+    await productsStep.enableCategoryFilter();
 });

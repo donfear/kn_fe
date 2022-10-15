@@ -26,6 +26,7 @@ export class ProductsFilters extends React.Component<ComponentProps> {
         {this._productsFilterStore.filters.map((filter, index) => (
           <FormControlLabel
             key={index}
+            data-product-category-filter
             sx={{marginRight: '82px'}}
             onChange={(_, isChecked) => this._productsFilterStore.updateSelectedFilter(filter.category, isChecked)}
             control={<Checkbox
