@@ -21,3 +21,9 @@ For running tests, run the development server and in another terminal window
 ```bash
 npm run test
 ```
+
+For running prod
+
+```bash
+npm run build; npm run start
+```
