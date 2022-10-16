@@ -1,4 +1,4 @@
-import {createTheme, ThemeOptions, alpha} from "@mui/material";
+import {createTheme, ThemeOptions, alpha, checkboxClasses} from "@mui/material";
 import {SimplePaletteColorOptions} from "@mui/material/styles/createPalette";
 
 const typography: ThemeOptions['typography'] = {
@@ -61,10 +61,10 @@ export const theme = createTheme({
       styleOverrides: {
         root: {
           '& .MuiSvgIcon-root': {
-            width: '16px',
-            height: '16px',
+            width: '21px',
+            height: '21px',
           }
-        }
+       }
       }
     },
     MuiChip: {

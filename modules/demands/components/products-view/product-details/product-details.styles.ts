@@ -14,7 +14,7 @@ export const ProductsDetailsContainer = styled(Card)({
 
 export const ProductsDetailsContent = styled('div')({
   padding: '42px 24px 21px',
-  overflowY: 'scroll'
+  overflowY: 'auto'
 })
 
 export const ProductDetailsManufacturerButton = styled('div')(({theme}) => ({

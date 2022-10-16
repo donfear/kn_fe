@@ -26,7 +26,7 @@ export const ProductListItemSeeAllToolTip = styled(StyledTooltip)(({theme}) => (
 }));
 
 export const ProductListItemSeeAllToolTipContent = styled('div')({
-  padding: '4px',
+  padding: '0 4px 4px',
   display: 'flex',
   flexWrap: 'wrap',
 })

@@ -6,7 +6,6 @@ import {ProductsFilterStore} from "../../../stores/products/filter/filter.store"
 import {reaction} from "mobx";
 import {Box, Checkbox, FormControlLabel} from "@mui/material";
 import {ProductsFiltersLabel} from "./products-filters.styles";
-import CheckboxUncheckedIcon from '../../../../../assets/svg/checkbox_unchecked.svg';
 
 @inject(ProductsStore._name)
 @observer
@@ -30,8 +29,7 @@ export class ProductsFilters extends React.Component<ComponentProps> {
             sx={{marginRight: '82px'}}
             onChange={(_, isChecked) => this._productsFilterStore.updateSelectedFilter(filter.category, isChecked)}
             control={<Checkbox
-              icon={<CheckboxUncheckedIcon/>}
-              sx={{color: "rgba(0, 0, 0, 0.05)",}}
+              sx={{color: "rgba(0, 0, 0, 0.05)"}}
             />}
             label={<ProductsFiltersLabel>{filter.label}</ProductsFiltersLabel>}
             labelPlacement="end"

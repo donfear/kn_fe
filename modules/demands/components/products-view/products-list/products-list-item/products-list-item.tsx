@@ -72,7 +72,7 @@ export class ProductsListItem extends React.Component<ProductsTableItemProps> {
                     </Box>
 
                     <Box display={'flex'} alignItems={'center'}>
-                        <Typography variant={'subtitle1'} color={'#8492A6'}>
+                        <Typography variant={'subtitle1'} color={(theme) => theme.palette.text.secondary}>
                             {this.props.category}
                         </Typography>
                     </Box>

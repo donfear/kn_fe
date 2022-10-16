@@ -1,8 +1,9 @@
 import {styled, Typography} from "@mui/material";
 
-export const ProductsFiltersLabel = styled(Typography)({
+export const ProductsFiltersLabel = styled(Typography)(({theme}) => ({
   fontWeight: 500,
   fontSize: "13px",
-  lineHeight: "15px",
-  color: "#8492A6"
-})
+  lineHeight: "16px",
+  marginRight: '1px',
+  color: theme.palette.text.secondary,
+}))
